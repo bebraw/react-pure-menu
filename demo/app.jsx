@@ -6,6 +6,8 @@ var Fork = require('react-ghfork');
 var readme = require('../README.md');
 var pkgInfo = require('../package.json');
 
+var Menu = require('../lib');
+
 
 module.exports = React.createClass({
     displayName: 'App',
@@ -21,14 +23,50 @@ module.exports = React.createClass({
                 </header>
                 <article className='pure-u-1'>
                     <section className='demonstration'>
-                        <div className='description'>
-                            <h2>Demonstration</h2>
+                        <h2>Default Menu</h2>
 
-                            <p>TODO</p>
+                        <div>
+                            <Menu>
+                                <Menu.Heading>Menu Heading</Menu.Heading>
+
+                                <Menu.List>
+                                    <Menu.Item>
+                                        <Menu.Link>Dashboard</Menu.Link>
+                                    </Menu.Item>
+                                    <Menu.Item>
+                                        <Menu.Link>Registers</Menu.Link>
+                                    </Menu.Item>
+                                    <Menu.Item>
+                                        <Menu.Link>Contracts</Menu.Link>
+                                    </Menu.Item>
+                                </Menu.List>
+                            </Menu>
                         </div>
-
-                        <div>...</div>
                     </section>
+
+                    <section className='demonstration'>
+                        <h2>Horizontal Menu</h2>
+
+                        <div>
+                            <Menu className='pure-menu-horizontal'>
+                                <Menu.List>
+                                    <Menu.Item>
+                                        <Menu.Link>Users</Menu.Link>
+                                    </Menu.Item>
+                                    <Menu.Item>
+                                        <Menu.Link>Clients</Menu.Link>
+                                    </Menu.Item>
+                                    <Menu.Item>
+                                        <Menu.Link>Products</Menu.Link>
+                                    </Menu.Item>
+                                    <Menu.Item>
+                                        <Menu.Link>Invoices</Menu.Link>
+                                    </Menu.Item>
+                                </Menu.List>
+                            </Menu>
+                        </div>
+                    </section>
+
                     <section className='documentation'>
                         <h2>README</h2>
 
