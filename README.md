@@ -3,6 +3,32 @@
 
 **react-pure-menu** provides wrapper for [Pure menu elements](http://purecss.io/menus/) making it easy to build Pure menus using React.
 
+## Usage
+
+```js
+var Menu = require('react-pure-menu');
+```
+
+```html
+<Menu>
+    <Menu.Heading>Menu Heading</Menu.Heading>
+
+    <Menu.List>
+        <Menu.Item>
+            <Menu.Link>Dashboard</Menu.Link>
+        </Menu.Item>
+        <Menu.Item>
+            <Menu.Link>Registers</Menu.Link>
+        </Menu.Item>
+        <Menu.Item>
+            <Menu.Link>Contracts</Menu.Link>
+        </Menu.Item>
+    </Menu.List>
+</Menu>
+```
+
+You can attach attributes to each component as usual. **className** won't override default Pure class. If you need something more custom, just attach customizing class (ie. **className='pure-menu-horizontal'**) based on Pure docs.
+
 ## Development
 
 * Linting - **npm run lint**
