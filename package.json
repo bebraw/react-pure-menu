@@ -13,7 +13,9 @@
     "lint": "eslint . --ext .js --ext .jsx"
   },
   "main": "dist/puremenu.js",
-  "dependencies": {},
+  "dependencies": {
+    "classnames": "^1.2.0"
+  },
   "devDependencies": {
     "babel-eslint": "^2.0.2",
     "css-loader": "^0.9.1",
