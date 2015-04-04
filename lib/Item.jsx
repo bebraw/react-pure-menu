@@ -19,7 +19,7 @@ module.exports = React.createClass({
 
     render: function() {
         var {className, disabled, selected, ...props} = this.props;
-        var disabledClass= disabled && 'pure-menu-disabled';
+        var disabledClass = disabled && 'pure-menu-disabled';
         var selectedClass = selected && 'pure-menu-selected';
 
         return (
