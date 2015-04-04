@@ -14,7 +14,7 @@ var Menu = require('react-pure-menu');
     <Menu.Heading>Menu Heading</Menu.Heading>
 
     <Menu.List>
-        <Menu.Item>
+        <Menu.Item selected={true}>
             <Menu.Link>Dashboard</Menu.Link>
         </Menu.Item>
         <Menu.Item>

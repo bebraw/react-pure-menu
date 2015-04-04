@@ -30,7 +30,7 @@ module.exports = React.createClass({
                                 <Menu.Heading>Menu Heading</Menu.Heading>
 
                                 <Menu.List>
-                                    <Menu.Item>
+                                    <Menu.Item selected={true}>
                                         <Menu.Link>Dashboard</Menu.Link>
                                     </Menu.Item>
                                     <Menu.Item>
@@ -53,7 +53,7 @@ module.exports = React.createClass({
                                     <Menu.Item>
                                         <Menu.Link>Users</Menu.Link>
                                     </Menu.Item>
-                                    <Menu.Item>
+                                    <Menu.Item selected={true}>
                                         <Menu.Link>Clients</Menu.Link>
                                     </Menu.Item>
                                     <Menu.Item>
