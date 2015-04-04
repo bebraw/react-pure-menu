@@ -75,11 +75,27 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = React.createClass({
 	    displayName: 'Menu',
 
+	    propTypes: {
+	        horizontal: React.PropTypes.bool,
+	        scrollable: React.PropTypes.bool,
+	    },
+
+	    getDefaultProps:function() {
+	      return {
+	        horizontal: false,
+	        scrollable: false,
+	      };
+	    },
+
 	    render: function() {
-	        var $__0=   this.props,className=$__0.className,props=(function(source, exclusion) {var rest = {};var hasOwn = Object.prototype.hasOwnProperty;if (source == null) {throw new TypeError();}for (var key in source) {if (hasOwn.call(source, key) && !hasOwn.call(exclusion, key)) {rest[key] = source[key];}}return rest;})($__0,{className:1});
+	        var $__0=     this.props,className=$__0.className,horizontal=$__0.horizontal,scrollable=$__0.scrollable,props=(function(source, exclusion) {var rest = {};var hasOwn = Object.prototype.hasOwnProperty;if (source == null) {throw new TypeError();}for (var key in source) {if (hasOwn.call(source, key) && !hasOwn.call(exclusion, key)) {rest[key] = source[key];}}return rest;})($__0,{className:1,horizontal:1,scrollable:1});
+	        var horizontalClass = horizontal && 'pure-menu-horizontal';
+	        var scrollableClass = scrollable && 'pure-menu-scrollable';
 
 	        return (
-	            React.createElement("div", React.__spread({className: classNames('pure-menu', className)},  props), props.children)
+	            React.createElement("div", React.__spread({className: 
+	                classNames('pure-menu', className, horizontalClass, scrollableClass)
+	            },  props), props.children)
 	        );
 	    },
 	});
@@ -140,11 +156,27 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = React.createClass({
 	    displayName: 'MenuItem',
 
+	    propTypes: {
+	        disabled: React.PropTypes.bool,
+	        selected: React.PropTypes.bool,
+	    },
+
+	    getDefaultProps:function() {
+	      return {
+	        disabled: false,
+	        selected: false,
+	      };
+	    },
+
 	    render: function() {
-	        var $__0=   this.props,className=$__0.className,props=(function(source, exclusion) {var rest = {};var hasOwn = Object.prototype.hasOwnProperty;if (source == null) {throw new TypeError();}for (var key in source) {if (hasOwn.call(source, key) && !hasOwn.call(exclusion, key)) {rest[key] = source[key];}}return rest;})($__0,{className:1});
+	        var $__0=     this.props,className=$__0.className,disabled=$__0.disabled,selected=$__0.selected,props=(function(source, exclusion) {var rest = {};var hasOwn = Object.prototype.hasOwnProperty;if (source == null) {throw new TypeError();}for (var key in source) {if (hasOwn.call(source, key) && !hasOwn.call(exclusion, key)) {rest[key] = source[key];}}return rest;})($__0,{className:1,disabled:1,selected:1});
+	        var disabledClass= disabled && 'pure-menu-disabled';
+	        var selectedClass = selected && 'pure-menu-selected';
 
 	        return (
-	            React.createElement("li", React.__spread({className: classNames('pure-menu-item', className)},  props), props.children)
+	            React.createElement("li", React.__spread({className: 
+	                classNames('pure-menu-item', className, disabledClass, selectedClass)
+	            },  props), props.children)
 	        );
 	    },
 	});
