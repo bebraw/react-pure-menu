@@ -8,21 +8,24 @@ module.exports = React.createClass({
 
     propTypes: {
         horizontal: React.PropTypes.bool,
+        scrollable: React.PropTypes.bool,
     },
 
     getDefaultProps() {
       return {
         horizontal: false,
+        scrollable: false,
       };
     },
 
     render: function() {
-        var {className, horizontal, ...props} = this.props;
+        var {className, horizontal, scrollable, ...props} = this.props;
         var horizontalClass = horizontal && 'pure-menu-horizontal';
+        var scrollableClass = scrollable && 'pure-menu-scrollable';
 
         return (
             <div className={
-                classNames('pure-menu', className, horizontalClass)
+                classNames('pure-menu', className, horizontalClass, scrollableClass)
             } {...props}>{props.children}</div>
         );
     },

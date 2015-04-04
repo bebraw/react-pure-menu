@@ -10,7 +10,9 @@ var Menu = require('react-pure-menu');
 ```
 
 ```html
-<Menu> <!-- accepts horizontal={true}, defaults to vertical -->
+<!-- accepts horizontal={true}, defaults to false (vertical) -->
+<!-- accepts scrollable={true}, defaults to false -->
+<Menu>
     <Menu.Heading>Menu Heading</Menu.Heading>
 
     <Menu.List>
@@ -28,6 +30,17 @@ var Menu = require('react-pure-menu');
 ```
 
 You can attach attributes to each component as usual. **className** won't override default Pure class so you can customize that.
+
+> To make a horizontal menu scrollable, besides setting the flag you'll need to restrict maximum height like this (based on Pure documentation):
+
+```css
+.restricted-menu {
+    height: 160px;
+    width: 150px;
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+```
 
 ## Development
 
