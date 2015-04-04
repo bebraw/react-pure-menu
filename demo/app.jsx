@@ -33,7 +33,7 @@ module.exports = React.createClass({
                                     <Menu.Item selected={true}>
                                         <Menu.Link>Dashboard</Menu.Link>
                                     </Menu.Item>
-                                    <Menu.Item>
+                                    <Menu.Item disabled={true}>
                                         <Menu.Link>Registers</Menu.Link>
                                     </Menu.Item>
                                     <Menu.Item>
@@ -59,7 +59,7 @@ module.exports = React.createClass({
                                     <Menu.Item>
                                         <Menu.Link>Products</Menu.Link>
                                     </Menu.Item>
-                                    <Menu.Item>
+                                    <Menu.Item disabled={true}>
                                         <Menu.Link>Invoices</Menu.Link>
                                     </Menu.Item>
                                 </Menu.List>

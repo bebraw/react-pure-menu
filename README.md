@@ -17,7 +17,7 @@ var Menu = require('react-pure-menu');
         <Menu.Item selected={true}>
             <Menu.Link>Dashboard</Menu.Link>
         </Menu.Item>
-        <Menu.Item>
+        <Menu.Item disabled={true}>
             <Menu.Link>Registers</Menu.Link>
         </Menu.Item>
         <Menu.Item>
