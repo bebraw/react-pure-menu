@@ -48,7 +48,7 @@ module.exports = React.createClass({
                         <h2>Horizontal Menu</h2>
 
                         <div>
-                            <Menu className='pure-menu-horizontal'>
+                            <Menu horizontal={true}>
                                 <Menu.List>
                                     <Menu.Item>
                                         <Menu.Link>Users</Menu.Link>

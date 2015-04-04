@@ -10,7 +10,7 @@ var Menu = require('react-pure-menu');
 ```
 
 ```html
-<Menu>
+<Menu> <!-- accepts horizontal={true}, defaults to vertical -->
     <Menu.Heading>Menu Heading</Menu.Heading>
 
     <Menu.List>
@@ -27,7 +27,7 @@ var Menu = require('react-pure-menu');
 </Menu>
 ```
 
-You can attach attributes to each component as usual. **className** won't override default Pure class. If you need something more custom, just attach customizing class (ie. **className='pure-menu-horizontal'**) based on Pure docs.
+You can attach attributes to each component as usual. **className** won't override default Pure class so you can customize that.
 
 ## Development
 

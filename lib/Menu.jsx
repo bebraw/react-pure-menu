@@ -6,11 +6,24 @@ var React = require('react');
 module.exports = React.createClass({
     displayName: 'Menu',
 
+    propTypes: {
+        horizontal: React.PropTypes.bool,
+    },
+
+    getDefaultProps() {
+      return {
+        horizontal: false,
+      };
+    },
+
     render: function() {
-        var {className, ...props} = this.props;
+        var {className, horizontal, ...props} = this.props;
+        var horizontalClass = horizontal && 'pure-menu-horizontal';
 
         return (
-            <div className={classNames('pure-menu', className)} {...props}>{props.children}</div>
+            <div className={
+                classNames('pure-menu', className, horizontalClass)
+            } {...props}>{props.children}</div>
         );
     },
 });
