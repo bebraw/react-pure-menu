@@ -12,10 +12,10 @@ module.exports = React.createClass({
     },
 
     getDefaultProps() {
-      return {
-        horizontal: false,
-        scrollable: false,
-      };
+        return {
+            horizontal: false,
+            scrollable: false,
+        };
     },
 
     render: function() {

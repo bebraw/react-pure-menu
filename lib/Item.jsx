@@ -11,10 +11,10 @@ module.exports = React.createClass({
     },
 
     getDefaultProps() {
-      return {
-        disabled: false,
-        selected: false,
-      };
+        return {
+            disabled: false,
+            selected: false,
+        };
     },
 
     render: function() {
